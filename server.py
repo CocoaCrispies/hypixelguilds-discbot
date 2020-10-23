@@ -1,6 +1,3 @@
-# bot.py
-from gevent import monkey as curious_george
-curious_george.patch_all(thread=False, select=False)
 import discord.ext
 import hypixel
 import requests
@@ -15,7 +12,9 @@ from bs4 import BeautifulSoup
 import aiohttp
 import math
 from tinydb import TinyDB, Query
+import json
 db = TinyDB('db.json')
+configKeys = json.load(open('config.json'))
 def table2json(table, keys: list):
     soup = BeautifulSoup(table, "html.parser")
     leaderboard = []
@@ -25,9 +24,9 @@ def table2json(table, keys: list):
         leaderboard.append(row)
     return leaderboard
 
-apiKey = '79a681b0-45fe-473a-a8a5-444e2f67edf3'
+apiKey = configKeys["hy-key"]
 
-hypixel.setKeys({'79a681b0-45fe-473a-a8a5-444e2f67edf3'})
+hypixel.setKeys({configKeys["hy-key"]})
 def sk1er_api(uname):
     r= requests.get(f"https://api.sk1er.club/guild/player/{uname}").json()
     return r
@@ -37,7 +36,7 @@ def fetch_uuid_uname(uname_or_uuid):
 def get_Guild_Info(guild_id):
     data = requests.get(f'https://api.hypixel.net/guild?id={guild_id}&key=79a681b0-45fe-473a-a8a5-444e2f67edf3').json()
     return data
-TOKEN = "NzMyMDAzMjU0MDEwOTA0NjQ4.XwuRJw.gfkGXUSG4vSNoeP4B1REA4BEClM"
+TOKEN = configKeys["disc-keys"]
 commandList = ["**help**"+"\n"+"_Commands and their arguments!_","\n","btw, if u wanna support me, heres a kofi, bc server spacec is expensive: ko-fi.com/cocoa","**support**"+"\n"+"_Sends link to help server_","**gexp**"+"\n"+"_Checks the guild exp of every member and checks if they are below the amout you input! Arg1 is your IGN, arg2 is the amount of gexp to check for!_", "**gpstats**"+"\n"+"_Shows stats of the guild that the player is a part of. Arg is IGN_", "**invite**"+"\n"+"_Gives the bot invite link!_", "**servers**"+"\n"+"_Counts how many discord servers the bot is connected to!_"]
 
 bot = commands.Bot(command_prefix="+", help_command=None, case_insensitive=True)
@@ -124,6 +123,7 @@ async def invite(ctx):
 async def gstats(ctx, arg):
   async with ctx.typing():
     Name = arg
+    #this is werid
     #uname, uuid = fetch_uuid_uname(Name)
     Player = hypixel.Player(Name)
     print(" ")
