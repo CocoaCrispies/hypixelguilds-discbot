@@ -11,6 +11,6 @@ This bot has been around for awhile, but is just recently being released as open
     chmod +x start.sh
 5. Run start.sh if on linux by typing ```
         ./start.sh ```
-  - IF on Windows, run instead: ```
+    - IF on Windows, run instead: ```
         start.bat```
       
