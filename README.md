@@ -6,7 +6,7 @@ This bot has been around for awhile, but is just recently being released as open
 - Guild stats
 ## Setting Up:
 
-### Prerequisites
+### Prerequisites:
 - Make sure you have a developer account setup and an application created, with the bot's token created and ready.
 - If you don't know how to do this, consult this guide: https://discordpy.readthedocs.io/en/latest/discord.html
 
