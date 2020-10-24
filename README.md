@@ -4,6 +4,17 @@ This bot has been around for awhile, but is just recently being released as open
 - Verification
 - Player's guild stats
 - Guild stats
+
+### Commands:
+
+- +gpstats [ign]
+- +gstats [ign]
+- +gexp [ign] [amount to check for]
+- +help
+- +support
+- +servers
+- + verify [ign/setup]
+
 ## Setting Up:
 
 ### Prerequisites:
