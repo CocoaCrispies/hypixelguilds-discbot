@@ -13,7 +13,7 @@ This bot has been around for awhile, but is just recently being released as open
 - +help
 - +support
 - +servers
-- + verify [ign/setup]
+- +verify [ign/setup]
 
 ## Setting Up:
 
