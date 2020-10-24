@@ -10,7 +10,7 @@ This bot has been around for awhile, but is just recently being released as open
 3. **(LINUX ONLY)** While in the directory of the project, run 
     chmod +x start.sh
 5. Run start.sh if on linux by typing 
-    ./start.sh
+        ./start.sh
   - IF on Windows, run instead: 
-      start.bat
+        start.bat
       
