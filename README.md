@@ -19,5 +19,5 @@ This bot has been around for awhile, but is just recently being released as open
 5. Run start.sh if on linux by typing ```
         ./start.sh ```
     - IF on Windows, run instead: ```
-        start.bat```
+        ./start.bat```
 6. Enjoy the bot!      
