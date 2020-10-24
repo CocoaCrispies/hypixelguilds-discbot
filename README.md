@@ -10,7 +10,7 @@ This bot has been around for awhile, but is just recently being released as open
 - Make sure you have a developer account setup and an application created, with the bot's token created and ready.
 - If you don't know how to do this, consult this guide: https://discordpy.readthedocs.io/en/latest/discord.html
 
-## Instructions:
+### Instructions:
 
 1. Download or clone the source code to your host of choice
 2. Remove the ".txt" from the "config.json.txt", and replace the keys with your own keys and token.
