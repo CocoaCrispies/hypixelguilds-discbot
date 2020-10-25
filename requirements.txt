@@ -5,5 +5,5 @@ requests
 gevent
 datetime
 bs4
-aiohttp
+aiohttp==3.6.3
 TinyDB
