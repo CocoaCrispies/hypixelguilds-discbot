@@ -1,1 +1,1 @@
-# hypixelguilds-discbot
+# Python3 Flask project

@@ -1,0 +1,10 @@
+Flask
+discord.py
+hypixel
+requests
+gevent
+datetime
+bs4
+aiohttp
+nbt
+base64
