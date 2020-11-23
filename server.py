@@ -34,7 +34,7 @@ def fetch_uuid_uname(uname_or_uuid):
     r = requests.get(f'https://mc-heads.net/minecraft/profile/{uname_or_uuid}').json()
     return r['name'], r['id']
 def get_Guild_Info(guild_id):
-    data = requests.get(f'https://api.hypixel.net/guild?id={guild_id}&key=79a681b0-45fe-473a-a8a5-444e2f67edf3').json()
+    data = requests.get(f'https://api.hypixel.net/guild?id={guild_id}&key={apiKey}').json()
     return data
 TOKEN = configKeys["disc-keys"]
 commandList = ["**help**"+"\n"+"_Commands and their arguments!_","\n","btw, if u wanna support me, heres a kofi, bc server spacec is expensive: ko-fi.com/cocoa","**support**"+"\n"+"_Sends link to help server_","**gexp**"+"\n"+"_Checks the guild exp of every member and checks if they are below the amout you input! Arg1 is your IGN, arg2 is the amount of gexp to check for!_", "**gpstats**"+"\n"+"_Shows stats of the guild that the player is a part of. Arg is IGN_", "**invite**"+"\n"+"_Gives the bot invite link!_", "**servers**"+"\n"+"_Counts how many discord servers the bot is connected to!_"]
